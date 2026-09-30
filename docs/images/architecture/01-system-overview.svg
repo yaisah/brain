@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" class="dg" viewBox="0 0 1000 600" role="img" aria-label="System overview: an agent host loads the public toolkit (entry points, skills, Python helpers, templates), which reads and writes a private brain made of a shared root and per-workspace folders."><style>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" class="dg" viewBox="0 0 1000 600" role="img" aria-label="System overview: an agent host loads the public toolkit (entry points, skills, Python helpers, templates), which reads and writes a private brain made of a shared root and per-workspace folders."><style>
 :root {
   color-scheme: light;
   --surface:#FFFFFF; --raised:#F4F6F9; --ink:#18222D; --muted:#5A6676;
