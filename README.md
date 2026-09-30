@@ -1,8 +1,9 @@
 # Brain
 
-**An AI-assisted second brain for work and life, built around an agent-maintained wiki.**
+**This is an AI-assisted second brain for work and life, built around an agent-maintained wiki.**
 
-Keep original sources, turn them into connected knowledge, and use that knowledge
+This structure has worked wonders for me, it keeps me organized in my small businesses and personal like. 
+It let's you keep original sources, turn them into connected knowledge, and use that knowledge
 to support your projects, goals, and decisions. Your agent handles organization and
 maintenance within the scope you request; you guide the priorities and review
 important conclusions. Separate workspaces keep businesses, careers, research,
