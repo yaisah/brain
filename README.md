@@ -57,6 +57,11 @@ then update existing wiki pages and inform a plan or deliverable. Keeping the
 wiki current means connecting new evidence to what is already known, including
 contradictions, rather than only accumulating separate meeting summaries.
 
+![Source lifecycle diagram showing one original captured in shared raw storage, separate workspace interpretations, and evidence flowing into each wiki and output](docs/images/architecture/03-source-lifecycle.svg)
+
+*Source lifecycle, using fictional workspaces. The [source guide](docs/SOURCES_AND_ROUTING.md)
+explains how receipts track each destination.*
+
 Your durable memory lives in the files. In later sessions, the agent must read
 the relevant context; saving a note does not train the underlying model or make
 it automatically available in every chat. Preserved sources remain evidence,
@@ -68,6 +73,11 @@ the maintained-wiki pattern is described in
 [Andrej Karpathy's LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
 
 ## Structure
+
+![Brain system overview showing the public toolkit, optional agent host connections, and private shared and workspace files](docs/images/architecture/01-system-overview.svg)
+
+*The toolkit is public; your sources, workspace notes, and plans stay in ignored
+private paths. Workspace names in the diagram are fictional.*
 
 ```text
 Brain/

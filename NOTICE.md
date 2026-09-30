@@ -27,6 +27,10 @@ record. Exclude material whose reuse rights have not been established.
 Public examples use fictional data. Private workspace content, account configuration,
 and generated personal or business artifacts are outside the public release.
 
+The architecture figures in `docs/images/architecture/` were adapted from a
+[Claude-generated artifact](https://claude.ai/artifact/PUpQE7H1EWzhU8qbqMHKMJ)
+prepared for this toolkit and reviewed against the published files.
+
 ## Runtime dependencies
 
 Optional libraries are installed separately, not vendored: openpyxl and python-pptx.

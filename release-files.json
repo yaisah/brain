@@ -17,6 +17,8 @@
   "docs/SOURCES_AND_ROUTING.md",
   "docs/SOURCE_BROWSING.md",
   "docs/VALIDATION.md",
+  "docs/images/architecture/01-system-overview.svg",
+  "docs/images/architecture/03-source-lifecycle.svg",
   "examples/artifacts/model.json",
   "examples/artifacts/presentation.json",
   "examples/artifacts/prototype.json",

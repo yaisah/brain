@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" class="dg" viewBox="0 0 1000 574" role="img" aria-label="Source lifecycle: a transcript is captured once into shared raw evidence with a receipt, interpreted separately by two workspaces, promoted into each wiki when supported, and used in stories and outputs."><style>
+:root {
+  color-scheme: light;
+  --surface:#FFFFFF; --raised:#F4F6F9; --ink:#18222D; --muted:#5A6676;
+  --line:#D3DAE2; --wire:#7B8796;
+  --pub:#2D4CC0; --pub-tint:#EDF1FD; --pub-edge:#9DAEE8;
+  --prv:#94560A; --prv-tint:#FCF3E6; --prv-edge:#E1B775;
+  --f-sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --f-mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --surface:#131A21; --raised:#1A232C; --ink:#E3E9EF; --muted:#97A3B0;
+    --line:#2B3642; --wire:#6F7D8C;
+    --pub:#93AAFF; --pub-tint:#18213F; --pub-edge:#3D5099;
+    --prv:#EDB46A; --prv-tint:#2A2014; --prv-edge:#7B5B2D;
+  }
+}
+
+.dg text{font-family:var(--f-sans);font-weight:500}
+.d-bg{fill:var(--surface)}
+.d-frame{fill:none;stroke:var(--line);stroke-width:1}
+.d-n{fill:var(--raised);stroke:var(--line);stroke-width:1}
+.d-pub{fill:var(--pub-tint);stroke:var(--pub-edge);stroke-width:1}
+.d-prv{fill:var(--prv-tint);stroke:var(--prv-edge);stroke-width:1}
+.d-ext{fill:var(--surface);stroke:var(--wire);stroke-width:1.2;stroke-dasharray:5 4}
+.d-zpub{fill:none;stroke:var(--pub-edge);stroke-width:1.3;stroke-dasharray:3 4}
+.d-zprv{fill:none;stroke:var(--prv-edge);stroke-width:1.3;stroke-dasharray:3 4}
+.d-bpub{fill:var(--pub-tint)}
+.d-bprv{fill:var(--prv-tint)}
+.d-bn{fill:var(--raised)}
+.d-chip{fill:var(--surface);stroke:var(--line);stroke-width:1}
+.d-chpub{fill:var(--surface);stroke:var(--pub-edge);stroke-width:1}
+.d-chprv{fill:var(--surface);stroke:var(--prv-edge);stroke-width:1}
+.d-chext{fill:var(--surface);stroke:var(--wire);stroke-width:1;stroke-dasharray:4 3}
+.d-dot{fill:var(--ink)}
+.dg .d-h{fill:var(--ink);font-size:16px;font-weight:600}
+.dg .d-t{fill:var(--ink);font-size:14.5px}
+.dg .d-s{fill:var(--muted);font-size:13px}
+.dg .d-m{fill:var(--ink);font-family:var(--f-mono);font-size:13.5px;font-weight:400}
+.dg .d-ms{fill:var(--muted);font-family:var(--f-mono);font-size:12.5px;font-weight:400}
+.dg .d-k{font-size:11.5px;font-weight:600;letter-spacing:.09em}
+.dg .d-num{fill:var(--surface);font-size:13px;font-weight:600}
+.dg .d-lab{fill:var(--muted);font-size:12.5px;paint-order:stroke;stroke:var(--surface);stroke-width:5px;stroke-linejoin:round}
+.dg .f-s{font-family:var(--f-sans);font-size:12.5px;font-weight:500}
+.dg .c-pub{fill:var(--pub)}
+.dg .c-prv{fill:var(--prv)}
+.dg .c-mut{fill:var(--muted)}
+.dg .c-ink{fill:var(--ink)}
+.d-w{fill:none;stroke:var(--wire);stroke-width:1.5}
+.d-wd{stroke-dasharray:5 4}
+.d-wpub{stroke:var(--pub)}
+.d-wprv{stroke:var(--prv)}
+.d-ah{fill:var(--wire)}
+.d-ahpub{fill:var(--pub)}
+.d-ahprv{fill:var(--prv)}
+.d-fpub{fill:var(--pub)}
+.d-fprv{fill:var(--prv)}
+.d-fmut{fill:var(--wire)}</style><defs><marker id="lifecycle-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-ah"/></marker><marker id="lifecycle-ahpub" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-ahpub"/></marker><marker id="lifecycle-ahprv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-ahprv"/></marker></defs><rect x="0.5" y="0.5" width="999" height="573" rx="12" class="d-bg"/><circle cx="31" cy="36" r="11" class="d-dot"/><text x="31" y="40.5" class="d-num" text-anchor="middle">1</text><text x="50" y="40" class="d-k c-ink">CAPTURE</text><text x="130" y="40" class="d-s">once, immutable</text><circle cx="331" cy="36" r="11" class="d-dot"/><text x="331" y="40.5" class="d-num" text-anchor="middle">2</text><text x="350" y="40" class="d-k c-ink">INTERPRET</text><text x="435.4" y="40" class="d-s">per workspace</text><circle cx="571" cy="36" r="11" class="d-dot"/><text x="571" y="40.5" class="d-num" text-anchor="middle">3</text><text x="590" y="40" class="d-k c-ink">CONNECT</text><text x="675" y="40" class="d-s">supported claims</text><circle cx="811" cy="36" r="11" class="d-dot"/><text x="811" y="40.5" class="d-num" text-anchor="middle">4</text><text x="830" y="40" class="d-k c-ink">USE</text><text x="863.8" y="40" class="d-s">plan, decide, ship</text><rect x="20" y="64" width="260" height="56" rx="8" class="d-n"/><text x="36" y="91" class="d-h">Meeting transcript</text><text x="36" y="106" class="d-s">supplied file or connector item</text><path d="M150,120 L150,144" class="d-w" marker-end="url(#lifecycle-ah)"/><rect x="20" y="146" width="260" height="56" rx="8" class="d-pub"/><text x="36" y="172" class="d-m">intake.py capture</text><text x="36" y="192" class="d-s">hash · store · record targets</text><path d="M150,202 L150,226" class="d-w" marker-end="url(#lifecycle-ah)"/><text x="158" y="219" class="d-lab">writes</text><rect x="20" y="228" width="260" height="240" rx="10" class="d-prv"/><text x="36" y="250" class="d-k c-prv">SHARED EVIDENCE</text><rect x="32" y="262" width="236" height="66" rx="6" class="d-chprv"/><text x="44" y="284" class="d-ms" xml:space="preserve"><tspan class="c-mut">raw/shared/</tspan><tspan class="f-s c-mut">  immutable original</tspan></text><text x="44" y="308" class="d-m">Planning call.md</text><rect x="32" y="340" width="236" height="116" rx="6" class="d-chprv"/><text x="44" y="362" class="d-ms">maintenance/intake/…json</text><text x="44" y="386" class="d-m" xml:space="preserve"><tspan class="c-mut">sha256     </tspan><tspan class="c-ink">9f3a…c21e</tspan></text><text x="44" y="408" class="d-m" xml:space="preserve"><tspan class="c-mut">studio-a   </tspan><tspan class="c-ink">complete</tspan></text><text x="44" y="430" class="d-m" xml:space="preserve"><tspan class="c-mut">career-lab </tspan><tspan class="c-ink">pending</tspan></text><text x="44" y="448" class="d-s">receipt: identity, versions, routing</text><path d="M268,295 L296,295 L296,128 L318,128" class="d-w" marker-end="url(#lifecycle-ah)"/><path d="M296,272 L318,272" class="d-w" marker-end="url(#lifecycle-ah)"/><rect x="320" y="84" width="200" height="88" rx="8" class="d-prv"/><text x="336" y="108" class="d-ms">studio-a/Ingestion/</text><text x="336" y="130" class="d-m">planning-call.md</text><text x="336" y="152" class="d-s">relevant section only</text><path d="M520,128 L558,128" class="d-w" marker-end="url(#lifecycle-ah)"/><rect x="560" y="84" width="200" height="88" rx="8" class="d-prv"/><text x="576" y="108" class="d-ms">studio-a/wiki/</text><text x="576" y="130" class="d-m">pricing.md</text><text x="576" y="152" class="d-s">+ INDEX.md · log.md</text><path d="M760,128 L798,128" class="d-w" marker-end="url(#lifecycle-ah)"/><rect x="800" y="84" width="180" height="88" rx="8" class="d-prv"/><text x="816" y="108" class="d-ms">studio-a/</text><text x="816" y="130" class="d-m">STORY.md</text><text x="816" y="152" class="d-s">next action updated</text><rect x="320" y="228" width="200" height="88" rx="8" class="d-prv"/><text x="336" y="252" class="d-ms">career-lab/Ingestion/</text><text x="336" y="274" class="d-m">planning-call.md</text><text x="336" y="296" class="d-s">its own interpretation</text><path d="M520,272 L558,272" class="d-w" marker-end="url(#lifecycle-ah)"/><rect x="560" y="228" width="200" height="88" rx="8" class="d-prv"/><text x="576" y="252" class="d-ms">career-lab/wiki/</text><text x="576" y="274" class="d-m">stakeholders.md</text><text x="576" y="296" class="d-s">+ INDEX.md · log.md</text><path d="M760,272 L798,272" class="d-w" marker-end="url(#lifecycle-ah)"/><rect x="800" y="228" width="180" height="88" rx="8" class="d-prv"/><text x="816" y="252" class="d-ms">career-lab/</text><text x="816" y="274" class="d-m">outputs/</text><text x="816" y="296" class="d-s">prep brief drafted</text><path d="M420,316 L420,372 L270,372" class="d-w d-wd" marker-end="url(#lifecycle-ah)"/><text x="430" y="352" class="d-lab">intake.py mark-complete</text><text x="430" y="370" class="d-lab">once the synthesis exists</text><path d="M268,430 L318,430" class="d-w d-wd" marker-end="url(#lifecycle-ah)"/><rect x="320" y="404" width="440" height="52" rx="8" class="d-pub"/><text x="336" y="435" class="d-m">source_catalog.py generate</text><text x="558.6" y="435" class="d-s">→ each SOURCES.md</text><text x="20" y="504" class="d-k c-mut">RECEIPT STATUS</text><text x="170" y="504" class="d-s">per source version, tracked in maintenance/intake/</text><rect x="20" y="516" width="300" height="42" rx="8" class="d-chip"/><text x="34" y="542" class="d-m" xml:space="preserve"><tspan class="c-ink">unassigned</tspan><tspan class="f-s c-mut">  waits in inbox/ for routing</tspan></text><path d="M320,537 L348,537" class="d-w" marker-end="url(#lifecycle-ah)"/><rect x="350" y="516" width="300" height="42" rx="8" class="d-chip"/><text x="364" y="542" class="d-m" xml:space="preserve"><tspan class="c-ink">pending</tspan><tspan class="f-s c-mut">  a destination synthesis is missing</tspan></text><path d="M650,537 L678,537" class="d-w" marker-end="url(#lifecycle-ah)"/><rect x="680" y="516" width="300" height="42" rx="8" class="d-chip"/><text x="694" y="542" class="d-m" xml:space="preserve"><tspan class="c-ink">complete</tspan><tspan class="f-s c-mut">  every destination is synthesized</tspan></text></svg>
