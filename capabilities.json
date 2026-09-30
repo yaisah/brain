@@ -1,0 +1,212 @@
+[
+  {
+    "capability": "ingest",
+    "skill": "ingest",
+    "optional": false
+  },
+  {
+    "capability": "prep",
+    "skill": "prep",
+    "optional": false
+  },
+  {
+    "capability": "review",
+    "skill": "review",
+    "optional": false
+  },
+  {
+    "capability": "weekly-summary",
+    "skill": "weekly-summary",
+    "optional": false
+  },
+  {
+    "capability": "story",
+    "skill": "story",
+    "optional": false
+  },
+  {
+    "capability": "discovery-rigor",
+    "skill": "discovery-rigor",
+    "optional": false
+  },
+  {
+    "capability": "pre-mortem",
+    "skill": "pre-mortem",
+    "optional": false
+  },
+  {
+    "capability": "prioritize",
+    "skill": "prioritize",
+    "optional": false
+  },
+  {
+    "capability": "plan-day",
+    "skill": "plan-day",
+    "optional": false
+  },
+  {
+    "capability": "north-star",
+    "skill": "north-star",
+    "optional": false
+  },
+  {
+    "capability": "battlecard",
+    "skill": "battlecard",
+    "optional": false
+  },
+  {
+    "capability": "think-discovery",
+    "skill": "think-discovery",
+    "optional": false
+  },
+  {
+    "capability": "stakeholder-questionnaire",
+    "skill": "stakeholder-questionnaire",
+    "optional": false
+  },
+  {
+    "capability": "strategic-narrative",
+    "skill": "strategic-narrative",
+    "optional": false
+  },
+  {
+    "capability": "redteam",
+    "skill": "redteam",
+    "optional": false
+  },
+  {
+    "capability": "converge",
+    "skill": "converge",
+    "optional": false
+  },
+  {
+    "capability": "champion",
+    "skill": "champion",
+    "optional": false
+  },
+  {
+    "capability": "anti-ai-slop-writing",
+    "skill": "edit-writing",
+    "optional": false
+  },
+  {
+    "capability": "analyze-metrics",
+    "skill": "analyze-metrics",
+    "optional": false
+  },
+  {
+    "capability": "think-data-analyst",
+    "skill": "think-data-analyst",
+    "optional": false
+  },
+  {
+    "capability": "think-roi",
+    "skill": "think-roi",
+    "optional": false
+  },
+  {
+    "capability": "write-financial-model",
+    "skill": "write-financial-model",
+    "optional": false
+  },
+  {
+    "capability": "write-business-case",
+    "skill": "write-business-case",
+    "optional": false
+  },
+  {
+    "capability": "write-product-brief",
+    "skill": "write-product-brief",
+    "optional": false
+  },
+  {
+    "capability": "write-jira-epic",
+    "skill": "write-delivery-plan",
+    "optional": false
+  },
+  {
+    "capability": "write-launch-plan",
+    "skill": "write-launch-plan",
+    "optional": false
+  },
+  {
+    "capability": "think-launch-report",
+    "skill": "think-launch-report",
+    "optional": false
+  },
+  {
+    "capability": "write-exec-deck",
+    "skill": "write-presentation",
+    "optional": false
+  },
+  {
+    "capability": "prototype",
+    "skill": "prototype",
+    "optional": false
+  },
+  {
+    "capability": "sync-docs",
+    "skill": "sync-docs",
+    "optional": false
+  },
+  {
+    "capability": "think-prioritize",
+    "skill": "prioritize",
+    "optional": false
+  },
+  {
+    "capability": "deck-narrative",
+    "skill": "write-presentation",
+    "optional": false
+  },
+  {
+    "capability": "organization-deck",
+    "skill": "write-presentation",
+    "optional": false
+  },
+  {
+    "capability": "visual-explainer",
+    "skill": "visual-explainer",
+    "optional": true
+  },
+  {
+    "capability": "source-command-diff-review",
+    "skill": "diff-review",
+    "optional": true
+  },
+  {
+    "capability": "source-command-fact-check",
+    "skill": "fact-check",
+    "optional": true
+  },
+  {
+    "capability": "source-command-generate-slides",
+    "skill": "visual-slides",
+    "optional": true
+  },
+  {
+    "capability": "source-command-generate-visual-plan",
+    "skill": "visual-plan",
+    "optional": true
+  },
+  {
+    "capability": "source-command-generate-web-diagram",
+    "skill": "web-diagram",
+    "optional": true
+  },
+  {
+    "capability": "source-command-plan-review",
+    "skill": "plan-review",
+    "optional": true
+  },
+  {
+    "capability": "source-command-project-recap",
+    "skill": "project-recap",
+    "optional": true
+  },
+  {
+    "capability": "coordinate",
+    "skill": "coordinate",
+    "optional": true
+  }
+]

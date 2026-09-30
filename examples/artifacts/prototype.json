@@ -1,0 +1,10 @@
+{
+  "title": "Garden Notes idea planner",
+  "description": "A fictional workspace for comparing small product ideas. Add an idea, change its status, or sort by estimated impact and effort.",
+  "fictional": true,
+  "items": [
+    {"title": "Weekly watering reminder", "impact": 8, "effort": 2, "status": "Idea"},
+    {"title": "Photo journal for each garden bed", "impact": 6, "effort": 5, "status": "Planned"},
+    {"title": "Printable seasonal checklist", "impact": 5, "effort": 2, "status": "Done"}
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Garden Notes discovery decision",
+  "subtitle": "A fictional example of turning a customer signal into a small experiment",
+  "fictional": true,
+  "slides": [
+    {
+      "title": "The planning problem",
+      "bullets": ["A fictional community gardener forgets which beds need watering.", "The current workaround is a paper notebook that stays indoors.", "This single example suggests a question; it does not establish market demand."],
+      "sources": ["Fictional interview fixture created for this demonstration."],
+      "notes": "Distinguish the observed workaround from the unvalidated opportunity. No actual interviews were conducted."
+    },
+    {
+      "title": "Test a weekly reminder",
+      "bullets": ["Prototype one weekly planning screen before building a full garden manager.", "Ask five volunteer gardeners to explain how they would use it.", "Record misunderstandings, missing context, and the current alternatives."],
+      "sources": ["Proposed experiment; participant count is an illustrative assumption."],
+      "notes": "This is a learning proposal. Recruiting and contact require the user's own authorization."
+    },
+    {
+      "title": "Decision after the test",
+      "bullets": ["Continue only if the planning problem recurs and the proposed workflow is understood.", "Revise if the real need is recordkeeping rather than reminders.", "Stop if existing tools already solve the problem well."],
+      "sources": ["Proposed decision criteria; no results are claimed."],
+      "notes": "Set a review date and evidence owner before running the test."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Fictional Garden Notes operating model",
+  "fictional": true,
+  "currency": "USD",
+  "months": 12,
+  "start_month": "2027-01",
+  "starting_customers": 100,
+  "monthly_growth_rate": 0.05,
+  "monthly_price": 12,
+  "variable_cost_per_customer": 2,
+  "fixed_monthly_cost": 800,
+  "starting_cash": 5000,
+  "sources": ["Synthetic teaching data created for this toolkit; no real customer or company information."],
+  "assumptions": [
+    "Customers are expected customer equivalents; growth compounds monthly after month one.",
+    "Price and costs stay constant throughout the forecast.",
+    "All revenue and operating costs affect cash in the same month; taxes, financing and investment are excluded."
+  ]
+}

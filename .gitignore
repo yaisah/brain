@@ -1,0 +1,24 @@
+# Private brain content lives at the root, alongside the public toolkit.
+/Projects/
+/raw/
+/inbox/
+/maintenance/
+/context/
+/outputs/
+/INDEX.md
+/registry.json
+/integrations.json
+# Preserve exclusion of older private layouts until deliberately migrated.
+/brain/
+/wiki/
+# Local installs, backups, generated releases, dependencies, and secrets.
+/.local/
+/.agents/
+/.claude/
+/dist/
+/.venv/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.DS_Store
