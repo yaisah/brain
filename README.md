@@ -1,20 +1,21 @@
 # Brain
 
-**This is an AI-assisted second brain for work and life, built around an agent-maintained wiki.**
+**A file-based second brain for work and life, built around an agent-maintained wiki.**
 
-This structure has worked wonders for me, it keeps me organized in my small businesses and personal like. 
-It let's you keep original sources, turn them into connected knowledge, and use that knowledge
-to support your projects, goals, and decisions. Your agent handles organization and
-maintenance within the scope you request; you guide the priorities and review
-important conclusions. Separate workspaces keep businesses, careers, research,
-and personal life organized in one brain.
+I use Brain to keep my small businesses and personal life organized. It connects
+original sources, decisions, current work, and useful outputs, so I can find the
+reasoning behind a plan instead of reconstructing it from scattered notes. Separate
+workspaces keep different parts of life and work in one place without mixing their
+context.
 
-Brain uses ordinary files. Ingestion, planning, and maintenance run when requested;
-recurring routines require separate configuration. The top-level `Brain/` folder
-contains your private knowledge alongside the generic toolkit. The release builder
-includes only the public toolkit files.
+Brain stores knowledge in Markdown and JSON files in a folder on your computer;
+no separate database is required.
+Your agent reads the relevant files and helps maintain them when you ask, or when
+you approve a recurring routine. The public toolkit contains the methods, scripts,
+and templates; your personal content stays in private paths.
 
-[Start here](#start-here) · [How Brain works](#how-brain-works) · [Structure](#structure) · [Everyday use](#everyday-use) ·
+[Start here](#start-here) · [How Brain works](#how-brain-works) · [Structure](#structure) ·
+[Everyday use](#everyday-use) · [Skills](#skills) · [Keep it current](#keep-it-current) ·
 [Manual setup](#manual-setup) · [Privacy and sharing](#privacy-and-sharing)
 
 ## Start here
@@ -26,6 +27,7 @@ includes only the public toolkit files.
 
    > Help me get started. Initialize my brain here, help me choose my first workspace,
    > and do one useful thing. Reuse what I tell you and leave other details unknown.
+   > After that first task, ask whether I want recurring source intake and review.
 
 The agent follows [guided setup](docs/GETTING_STARTED.md), checks Python, installs
 local core skills, initializes the brain, and creates or resumes a workspace. It
@@ -45,11 +47,15 @@ and [skills guide](https://learn.chatgpt.com/docs/build-skills).
 
 ## How Brain works
 
-**Second brain** describes the purpose: help you remember, understand, decide,
-and act. **LLM wiki** describes how knowledge is maintained: your agent builds
-and updates connected, source-linked pages as useful information arrives.
-**Automation** describes when those workflows run. These ideas work together;
-you can use Brain on request and add scheduled routines later.
+When notes are spread across chats, documents, email, and other tools, it is easy
+to lose why a decision was made or which source supported it. Brain preserves the
+original, records a source-linked interpretation in the relevant workspace, and
+updates durable knowledge when the evidence is useful. The agent can then use that
+context to help you plan, analyze, write, or decide.
+
+**Skills** give the agent repeatable methods for doing work. **Brain files** hold
+what you learned across those tasks. The wiki is a maintained set of connected,
+source-linked pages; a skill is an instruction for how to do a particular job.
 
 A typical workflow is **capture → interpret → connect → use**. For example, a
 meeting transcript is preserved in `raw/`; its workspace interpretation records
@@ -63,10 +69,11 @@ contradictions, rather than only accumulating separate meeting summaries.
 *Source lifecycle, using fictional workspaces. The [source guide](docs/SOURCES_AND_ROUTING.md)
 explains how receipts track each destination.*
 
-Your durable memory lives in the files. In later sessions, the agent must read
-the relevant context; saving a note does not train the underlying model or make
-it automatically available in every chat. Preserved sources remain evidence,
-with their original limitations; generated interpretations can need correction.
+The files are the durable memory. In later sessions, the agent must read the
+relevant context; saving a note does not train the underlying model or make it
+automatically available in every chat. Preserved sources retain their original
+limitations, and generated interpretations can need correction. A review routine
+helps catch stale evidence, broken links, and unresolved disagreements.
 
 Obsidian is an optional way to browse and edit the files. The broader second-brain
 approach is described in [Tiago Forte's guide](https://fortelabs.com/blog/basboverview/);
@@ -149,30 +156,67 @@ For a brain-wide request, say so naturally:
 
 > Review my brain this week: find stale context, broken source links, and unresolved items.
 
+For example, you might ingest a meeting transcript on Monday, use its sourced
+findings to revise a plan midweek, and run a review on Friday. A one-off comment
+can stay in `Ingestion/`; a supported finding that will help future work can be
+connected to the workspace wiki. The review reports what is stale or uncertain
+and can fix safe housekeeping such as a clear index omission.
+
 The agent uses the registry's planning or review scope and shared preferences.
 It starts with goals, current stories, and task indexes, then reads deeper only
 when needed. It saves a daily plan under `outputs/` and review coverage
 under `maintenance/`. It does not ask you to select each included workspace.
 Paused/archived workspaces and disabled participation flags are excluded.
 
-A connected intake routine can process an approved collection once each day and
-route its items to multiple workspaces. For example, a 9 a.m. meeting tagged
-Studio A and a 10 a.m. meeting tagged Studio B can reach different destinations
-in the same run. Trusted provider metadata and approved mappings drive routing;
-ambiguous items wait in the inbox. Imported prose cannot grant access or redirect work.
+## Skills
 
-Configure source/account scope and destinations once. The host can then run one
-user-approved schedule for intake, one for daily planning, and one for weekly review.
-Each routine reuses that scope; it does not need one schedule per workspace.
-This toolkit supplies workflows and local helpers, **not a Notion client or scheduler**.
-An actual connector/host must be available. Setup activates no connections or schedules.
+Describe what you want in plain language, or name a local skill such as `$ingest`
+in Codex or `/ingest` in Claude Code. The agent uses the method in `skills/` and
+the context for the workspace you selected. These are a few starting points:
 
-Use local skill names such as `$ingest` in Codex or `/ingest` in Claude Code.
+| When you want to… | Skills to try | What they help with |
+|---|---|---|
+| Capture and maintain knowledge | `ingest`, `sync-docs`, `story`, `review` | Preserve sources, interpret relevant changes, carry open threads forward, and check knowledge health. |
+| Put knowledge to work | `prep`, `plan-day`, `weekly-summary` | Prepare for a meeting, make a realistic daily plan, or draft an update for you to review. |
+| Understand and decide | `think-discovery`, `analyze-metrics`, `prioritize`, `pre-mortem` | Explore a problem, analyze supplied data, rank options, and test a plan's risks. |
+| Make useful artifacts | `write-product-brief`, `write-delivery-plan`, `write-presentation`, `prototype` | Turn sourced context into reviewable plans, presentations, and prototypes. |
+| Challenge and improve work | `redteam`, `converge`, `champion` | Surface consequential objections, seek independent review when available, and evaluate prompt changes against frozen cases. |
+
+`weekly-summary` drafts an update for you to review; it does not send it.
+The [capability map](capabilities.json) lists all methods and marks optional ones.
 If a name overlaps another installed skill, ask the agent to read this toolkit's
 explicit `skills/<name>/SKILL.md` or `optional-skills/<name>/SKILL.md` path.
-The [capability map](capabilities.json) lists methods for capture,
-planning, evidence review, discovery, writing, delivery, and visual artifacts.
-Use product-management frameworks only when they fit the task.
+Use a framework only when it fits the question.
+
+## Keep it current
+
+Files stay useful when new evidence reaches them and old claims get checked. Start
+with the sources that contain decisions or useful signals: perhaps selected Slack
+channels, Notion pages or databases, email labels, Drive folders, meeting notes,
+support conversations, or analytics exports. Your agent should ask which services
+you use and which exact accounts or collections belong in Brain. It should also
+check which connectors and scheduling tools your agent host actually provides.
+You can always supply files manually when a connection is unavailable.
+
+After your first useful task, send:
+
+> Help me keep this Brain current. Ask me which services and exact sources I want
+> included. Check the connectors and scheduler available here. Propose incremental
+> intake for the approved sources, routes to my workspaces, a weekly knowledge
+> review, and an optional daily plan. Show the scope, cadence, time zone,
+> notifications, and how incomplete items will be retried before enabling anything.
+> After I approve, set up the supported routines. Run the first cycle and tell me
+> what was processed, missed, or left pending.
+
+An intake routine can collect changes from multiple approved sources and send each
+item to its assigned workspace. Trusted metadata and approved routes decide where
+it goes; ambiguous items wait in `inbox/`. A weekly `review` checks source links,
+stale evidence, contradictions, and workspace coverage. An optional daily
+`plan-day` uses the active planning scope. The host runs these schedules; this
+toolkit supplies the file workflow, not a built-in Slack, Notion, or email client.
+Setup connects no accounts and activates no schedules. See the
+[source and routine guide](docs/SOURCES_AND_ROUTING.md#routines-and-efficient-reading)
+for configuration and first-run checks.
 
 ## Longer tasks and multiple agents
 
