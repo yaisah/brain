@@ -40,4 +40,6 @@ Fix an unambiguous index omission, a local link with one established destination
 
 Write `BRAIN/maintenance/runs/<run-id>/review.md`, even for a single-workspace review. Include scope, per-workspace coverage and skips, checks performed, fixes, unresolved findings, evidence pointers, failed sources, and the next material decision. Link it from each inspected workspace's `wiki/log.md` only when writing is allowed. A read-only request returns the report in chat unless saving was authorized.
 
+Make the chat result useful on its own. Surface each material item needing the user's action or judgment with the workspace, what needs attention, the concrete next action or decision, whether it is new/changed or still open, and a link to its evidence or report section. Group related details instead of copying the full report. State coverage failures in chat. When no user action is supported by the review, say that plainly and link the report. Do not bury actionable findings behind the report link or turn uncertain source status into a task.
+
 One unavailable workspace or source need not block independent checks, but makes the affected coverage partial. Distinguish complete, sampled, skipped, and failed workspaces; a folder's existence is not proof it was reviewed. A recurring review requires a separately configured supported scheduler; this skill creates no schedule.
